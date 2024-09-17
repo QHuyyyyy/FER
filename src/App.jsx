@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 import './App.css'
 import Navigation from './components/Header/Navigation'
-import Player from './components/Container/Player'
 import Footer from './components/Footer/Footer'
 import MainComponent from './components/MainComponent'
 
