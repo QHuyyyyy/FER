@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import ContentPre from './ContentPre';
-import { Orchids } from './Shared/ListOfOrchids';
+import { Players } from './Shared/ListOfPlayers';
 
 export default class MainComponent extends Component {
     constructor() {
         super();
         this.state = {
-            Orchid: Orchids
+            players: Players
         };
     }
     render() {
-    return <ContentPre Orchids = {this.state.Orchid}/>
+    return <ContentPre players = {this.state.players}/>
     
   }
 }

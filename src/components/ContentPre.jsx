@@ -1,22 +1,17 @@
 import React, { Component } from 'react'
-
-export default function ContentPre({Orchids}) {
-   console.log(Orchids)
+import './Container/Player.css'
+export default function ContentPre({players}) {
+   console.log(players)
     return (
       <div className="container">
       <div className="row">
-        {Orchids.map(orchid=> (
+        {players.map(players=> (
           <div className="column">
           <div className="card">
-            <img src={orchid.img} alt={orchid.image} />
-            <h2>{orchid.id}</h2>
-            <h3>{orchid.name}</h3>
-            <p className="title">{orchid.rating}</p> <br />
-            <p className="title">{orchid.isSpecial}</p> <br />
-            <p className="title">{orchid.rating}</p> <br />
-            <p className="title">{orchid.color}</p> <br />
-            <p className="title">{orchid.origin}</p> <br />
-            <p className="title">{orchid.category}</p> <br />
+            <img src={players.img} alt={players.image} />
+            <h2>{players.id}</h2>
+            <h3>{players.name}</h3>
+            <p className="title">{players.club}</p> <br />
             <button>Detail</button>
           </div>
         </div>
